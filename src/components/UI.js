@@ -10,13 +10,6 @@ const UI = (props) => {
         genreComponents: [<Action></Action>, <Comedy></Comedy>, <Documentary></Documentary>, <Drama></Drama>, <Family></Family>]
     }
 
-    function listGenres() {
-        for(let i = 0; i < 5; i++){
-            let newPage = props.genreComponents[i];
-            <p className='button' id={props.genreList[i]} onClick={() => setPage(newPage)}>Action</p>
-        }
-    }
-
     return ( 
         <div className="container">
             <div className="sidebar">
@@ -28,7 +21,11 @@ const UI = (props) => {
                 </div>
                 <div className="genres">
                     <p><b>Genres</b></p>
-                    {listGenres}
+                    <p className='button' id={props.genreList[0]} onClick={() => setPage(props.genreComponents[0])}>Action</p>
+                    <p className='button' id={props.genreList[1]} onClick={() => setPage(props.genreComponents[1])}>Comedy</p>
+                    <p className='button' id={props.genreList[2]} onClick={() => setPage(props.genreComponents[2])}>Documentary</p>
+                    <p className='button' id={props.genreList[3]} onClick={() => setPage(props.genreComponents[3])}>Drama</p>
+                    <p className='button' id={props.genreList[4]} onClick={() => setPage(props.genreComponents[4])}>Family</p>
                 </div>
                 <div className="links">
                     <p><b>About</b></p>
@@ -38,7 +35,9 @@ const UI = (props) => {
                 </div>
             </div>
             <div id='main' className="main">
-                {page}
+                <div>
+                    {page}
+                </div>
             </div>
         </div>
     );

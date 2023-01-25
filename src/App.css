@@ -9,8 +9,6 @@
 .main {
     display: grid;
     width: 85vw;
-    margin:0;
-    padding-right: 8px;
 }
 
 .mainBottom {
