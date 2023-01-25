@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+    display: grid;
+    width: 85vw;
+    margin:0;
+    padding-right: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainBottom {
+    padding-right: 8px;
+    width: 100%;
+    height: fit-content;
+    display: inline-flex;
+    place-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn2 {
+    width: 100px;
+    height: 25px;
+    justify-content: space-around;
+    border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.btn2:hover {
+    background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.space {
+    width: 10px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    padding-left: 2vw;
+}
+
+.search, .topmovies, .Genres {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+}
+
+.button:hover, a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.searchBar {
+    width: 25%;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: thin solid black;
+    text-align: center;
+}
+
+.results {
+    width: 85vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+
+
