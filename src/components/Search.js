@@ -5,8 +5,8 @@ const Search = () => {
     let pageNum = 1;
     const [term, setTerm] = useState('')
 
-    const url = 'https://api.themoviedb.org/3/trending/all/day?api_key=ad28aee8d3082cba2841abd59dd79b78';
-    const url2 = 'https://api.themoviedb.org/3/search/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&page='+pageNum+'&include_adult=false&query='+term;
+    const url = 'API_KEY';
+    const url2 = 'APIKEY';
     
     const handleChange = event => {
         setTerm(event.target.value);
@@ -28,23 +28,23 @@ const Search = () => {
             <div className="mainBottom">
                 <button className='btn2' onClick={() => {
                     if(term === ''){
-                        Fetch('https://api.themoviedb.org/3/trending/all/day?api_key=ad28aee8d3082cba2841abd59dd79b78');
+                        Fetch('API_KEY');
                         document.getElementById('results').scrollTo(0,0);
                     } else {
                         pageNum--;
                         if(pageNum === 0) pageNum = 1;
-                        Fetch('https://api.themoviedb.org/3/search/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&page='+pageNum+'&include_adult=false&query='+term);
+                        Fetch('API_KEY'+term);
                         document.getElementById('results').scrollTo(0,0);
                     }
                 }}>Previous</button><div className='space'></div>
                 <button className='btn2' onClick={() => {
                     if(term === ''){
-                        Fetch('https://api.themoviedb.org/3/trending/all/day?api_key=ad28aee8d3082cba2841abd59dd79b78');
+                        Fetch('API_KEY');
                         document.getElementById('results').scrollTo(0,0);
                     } else {
                         pageNum++;
                         if(pageNum === 0) pageNum = 1;
-                        Fetch('https://api.themoviedb.org/3/search/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&page='+pageNum+'&include_adult=false&query='+term);
+                        Fetch('API_KEY'+term);
                         document.getElementById('results').scrollTo(0,0);
                     }
                 }}>Next</button>
