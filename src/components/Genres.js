@@ -6,7 +6,7 @@ function useFetch(url) {
 
 export const Action = () => {
     let pageNum = 1;
-    const url = 'https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&&with_genres=28';
+    const url = 'API_KEY';
 
     return ( 
         <div className="Genres">
@@ -16,12 +16,12 @@ export const Action = () => {
                 <button className='btn2' onClick={() => {
                     pageNum--;
                     if(pageNum === 0) pageNum = 1;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=28');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Previous</button><div className='space'></div>
                 <button className='btn2' onClick={() => {
                     pageNum++;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=28');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Next</button>
             </div>
@@ -31,7 +31,7 @@ export const Action = () => {
 
 export const Comedy = () => {
     let pageNum = 1;
-    const url = 'https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&&with_genres=35';
+    const url = 'API_KEY';
     return ( 
         <div className="Genres">
             <h1>Comedy</h1>
@@ -40,12 +40,12 @@ export const Comedy = () => {
                 <button className='btn2' onClick={() => {
                     pageNum--;
                     if(pageNum === 0) pageNum = 1;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=35');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Previous</button><div className='space'></div>
                 <button className='btn2' onClick={() => {
                     pageNum++;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=35');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Next</button>
             </div>
@@ -55,7 +55,7 @@ export const Comedy = () => {
 
 export const Documentary = () => {
     let pageNum = 1;
-    const url = 'https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&&with_genres=99';
+    const url = 'API_KEY';
     return ( 
         <div className="Genres">
             <h1>Documentary</h1>
@@ -64,12 +64,12 @@ export const Documentary = () => {
                 <button className='btn2' onClick={() => {
                     pageNum--;
                     if(pageNum === 0) pageNum = 1;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=99');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Previous</button><div className='space'></div>
                 <button className='btn2' onClick={() => {
                     pageNum++;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=99');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Next</button>
             </div>
@@ -79,7 +79,7 @@ export const Documentary = () => {
 
 export const Drama = () => {
     let pageNum =1;
-    const url = 'https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&&with_genres=18';
+    const url = 'API_KEY';
     return ( 
         <div className="Genres">
             <h1>Drama</h1>
@@ -88,12 +88,12 @@ export const Drama = () => {
                 <button className='btn2' onClick={() => {
                     pageNum--;
                     if(pageNum === 0) pageNum = 1;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=18');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Previous</button><div className='space'></div>
                 <button className='btn2' onClick={() => {
                     pageNum++;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=18');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Next</button>
             </div>
@@ -103,7 +103,7 @@ export const Drama = () => {
 
 export const Family = () => {
     let pageNum = 1;
-    const url = 'https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&&with_genres=10751';
+    const url = 'API_KEY';
     return ( 
         <div className="Genres">
             <h1>Family</h1>
@@ -112,12 +112,12 @@ export const Family = () => {
                 <button className='btn2' onClick={() => {
                     pageNum--;
                     if(pageNum === 0) pageNum = 1;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=10751');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Previous</button><div className='space'></div>
                 <button className='btn2' onClick={() => {
                     pageNum++;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&&with_genres=10751');
+                    Fetch('API_Key');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Next</button>
             </div>
