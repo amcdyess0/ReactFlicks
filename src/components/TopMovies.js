@@ -2,7 +2,7 @@ import Fetch from "./Fetch";
 
 const TopMovies = () => {
     let pageNum =1;
-    const url = 'https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&with_watch_monetization_types=flatrate';
+    const url = 'API_KEY'+pageNum;
     
     function useFetch() {
         Fetch(url)
@@ -16,12 +16,12 @@ const TopMovies = () => {
                 <button className='btn2' onClick={() => {
                     pageNum--;
                     if(pageNum === 0) pageNum = 1;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&with_watch_monetization_types=flatrate');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Previous</button><div className='space'></div>
                 <button className='btn2' onClick={() => {
                     pageNum++;
-                    Fetch('https://api.themoviedb.org/3/discover/movie?api_key=ad28aee8d3082cba2841abd59dd79b78&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page='+pageNum+'&with_watch_monetization_types=flatrate');
+                    Fetch('API_KEY');
                     document.getElementById('results').scrollTo(0,0); 
                 }}>Next</button>
             </div>
